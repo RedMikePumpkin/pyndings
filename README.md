@@ -22,7 +22,7 @@ var python = new pyndings("path/to/script.py");
 
 ## Functions
 
-### `new pyndings(path\[,options\])`
+### `new pyndings(path[,options])`
 
 Creates a new python binding (pyding)
 
