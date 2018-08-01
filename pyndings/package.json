@@ -1,0 +1,23 @@
+{
+  "name": "pyndings",
+  "version": "1.0.0",
+  "description": "Bind python to node.js",
+  "main": "pyndings.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RedMikePumpkin/pyndings.git"
+  },
+  "keywords": [
+    "pyndings",
+    "python"
+  ],
+  "author": "RedMikePumpkin <michael@malinov.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RedMikePumpkin/pyndings/issues"
+  },
+  "homepage": "https://github.com/RedMikePumpkin/pyndings#readme"
+}
