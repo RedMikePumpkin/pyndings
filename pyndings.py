@@ -23,7 +23,6 @@ class Pyndings(object):
 		while True:
 			sleep(100)
 pynd = Pyndings()
-
 def pprint(msg):
 	print msg
 	stdout.flush()
