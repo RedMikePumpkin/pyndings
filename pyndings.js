@@ -13,7 +13,6 @@ class python {
 		}
 		var _this = this;
 		this.py.stdout.on('data', function(d) {
-			console.log("o");
 			var data = d.toString();
 			var ss = data.substring(0, 12);
 			var sp = data.slice(12, -1);
@@ -31,8 +30,12 @@ class python {
 		});
 	}
 	
-	run (command) {
-		this.py.stdin.write(command + "\n");
+	run (command, async) {
+		this.py.stdin.write((async ? "~~ASYNC~~" : "") + command + "\n");
+	}
+	
+	stopLoops () {
+		this.py.stdin.write("~~LOOPEND~~\n");
 	}
 	
 	close () {
