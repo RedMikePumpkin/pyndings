@@ -35,6 +35,7 @@ class Pyndings(object):
 		try:
 			val = self.aqueue.get(False)
 			eval(compile("pynd__out = " + val + "\nprint \"~~RETURN~~: \" + str(type(pynd__out)) + \" \" + str(pynd__out)", '<string>', 'exec'), self.globe)
+			stdout.flush()
 		except Queue.Empty:
 			self.doNothing()
 		except:
@@ -47,6 +48,7 @@ class Pyndings(object):
 			try:
 				val = self.queue.get(False)
 				eval(compile("pynd__out = " + val + "\nprint \"~~RETURN~~: \" + str(type(pynd__out)) + \" \" + str(pynd__out)", '<string>', 'exec'), self.globe)
+				stdout.flush()
 			except Queue.Empty:
 				self.doNothing()
 			except:
