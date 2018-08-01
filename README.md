@@ -9,6 +9,10 @@ Currently Pyndings is not available on npm so you have to clone the repository u
 cd your/node/directory/node-modules
 git clone https://github.com/RedMikePumpkin/pyndings.git
 ```
+## Examples
+
+  - helloworld: a simple program that shows off all of the features
+  - gpyo: (Raspberry Pi only) reads input from a switch on BCM 23 and changes light brightness when you press itp
 
 ## Usage
 
