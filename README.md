@@ -51,11 +51,16 @@ callback for errors
   - `callback <function>`:
     - `data <string>`: string containing error traceback
 
-### `pynding.run(command)`
+### `pynding.run(command[, async])`
 
 runs the command
 
   - `command <string>`: function to run
+  - `async <boolean>`: run process in seperate thread
+
+### `pynding.stopLoops()`
+
+makes `pynd.loop = False` until next command is sent
 
 ### `pynding.close()`
 
@@ -74,3 +79,5 @@ you also need to make sure that you use `pprint(msg)` instad of `print msg` and 
 ```python
 pynd.start(globals())
 ```
+
+you can also use `while pynd.loop:` instead of `while True:` for loops that you want to stop by using `pynding.stopLoops()`
