@@ -1,3 +1,5 @@
+from sys import path
+path.insert(0, './node_modules/pyndings/')
 from pyndings import pynd, pprint
 
 pprint("Hello, World!")
