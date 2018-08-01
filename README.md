@@ -12,7 +12,7 @@ git clone https://github.com/RedMikePumpkin/pyndings.git
 ## Examples
 
   - helloworld: a simple program that shows off all of the features
-  - gpyo: (Raspberry Pi only) reads input from a switch on BCM 23 and changes light brightness when you press itp
+  - gpyo: (Raspberry Pi only) reads input from a switch on BCM 23 and changes light brightness at BCM 18 when you press itp
 
 ## Usage
 
