@@ -22,13 +22,11 @@ var python = new pyndings("path/to/script.py");
 
 ## Functions
 
-### `new pyndings(path[,options])`
+### `new pyndings(path)`
 
 Creates a new python binding (pyding)
 
   - `path <string>`: path to the python file
-  - `options <object>`:
-    - `py3 <boolean> = false`: Use python 3, does not work with pyndings.py
 
 ### `pyding.onPrint(callback)`
 
