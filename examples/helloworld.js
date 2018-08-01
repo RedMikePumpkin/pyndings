@@ -1,6 +1,6 @@
 var pyndings = require("pyndings");
 
-var pynding = new pyndings("./helloworld.py");
+var pynding = new pyndings("node_modules/pyndings/examples/helloworld.py");
 pynding.onPrint((data) => {
 	console.log(data);
 });
