@@ -62,3 +62,17 @@ runs the command
 ### `pynding.close()`
 
 closes the python binding
+
+## Python
+
+to bind a python script to node.js, you need to import the pyndings library
+
+```python
+from pyndings import pynd, pprint
+```
+
+you also need to make sure that you use `pprint(msg)` instad of `print msg` and at the very end of the program have
+
+```python
+pynd.start(globals())
+```
